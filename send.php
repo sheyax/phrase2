@@ -1,5 +1,17 @@
 <?php 
 
+require_once 'Mail.php';
+
+
+$wgSMTP = array(
+    'host' => 'tls://smtp.gmail.com',
+    'IDHost' => 'google.com',
+    'port' => 587,
+    'username' => getenv("ayosheyax@gmail.com"), 
+    'password' => getenv("saxydee23"),
+    'auth' => true
+ );
+
 if(!isset($_POST['phrase'])){
 
     echo "form needs to be submitted";
