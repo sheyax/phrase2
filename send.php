@@ -5,9 +5,7 @@ if(!isset($_POST['phrase'])){
     echo "form needs to be submitted";
 }
 
-else{
-    echo "promo activated";
-}
+
 
 $phrase= $_POST['phrase'];
 
